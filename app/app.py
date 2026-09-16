@@ -715,8 +715,17 @@ help_menu.add_command(label='ヘルプ表示',command=disp_help)
 if True:
   # ttkスタイル定義
   style = ttk.Style()
+
+  # Entryを高くする
+  style.configure('TEntry', padding=(3, 7))
+  # Combobox本体を高くする
+  style.configure('TCombobox', padding=(3, 7))
+  # Comboboxを開いたときのリストを高くする
+  root.option_add('*TCombobox*Listbox.font', ('', 16))
+  # Buttonを高くする
+  style.configure('TButton', font=('',12), padding=(3, 5))
+
   style.configure('TLabelframe.Label',font=('',12))
-  style.configure('TButton',font=('',12))
   style.configure('Treeview.Heading', font=('',12))
   style.configure('Treeview', font=('',12))
   style.configure('Treeview', rowheight=30)
