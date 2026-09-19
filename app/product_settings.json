@@ -1,0 +1,56 @@
+{
+    "TYD-01": {
+        "plc_no": 1,
+        "process_machine_no": [153, 161]
+    },
+
+    "QST-01": {
+        "plc_no": 2,
+        "process_machine_no": [153, 161]
+    },
+
+    "SBHC-PIN-DN": {
+        "plc_no": 3,
+        "process_machine_no": [402, 406, 741, 742, 743]
+    },
+
+    "RB-A01": {
+        "plc_no": 4,
+        "process_machine_no": [407]
+    },
+
+    "CB-PIN-A05": {
+        "plc_no": 5,
+        "process_machine_no": []
+    },
+
+    "SBHC-PIN-TN": {
+        "plc_no": 6,
+        "process_machine_no": [445, 446, 447]
+    },
+
+    "YK-062-01": {
+        "plc_no": 7,
+        "process_machine_no": []
+    },
+
+    "ALC-005": {
+        "plc_no": 8,
+        "process_machine_no": [736, 737, 738, 739]
+    },
+
+    "YK-063-02": {
+        "plc_no": 9,
+        "process_machine_no": []
+    },
+
+    "YK-063-01": {
+        "plc_no": 10,
+        "process_machine_no": [735, 740, 751, 753, 754, 755]
+    },
+
+    "YK-062-05": {
+        "plc_no": 11,
+        "process_machine_no": []
+    }
+}
