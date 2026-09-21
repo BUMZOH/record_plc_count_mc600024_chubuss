@@ -797,7 +797,7 @@ style.configure("TCombobox", padding=(3, 7))
 # Comboboxを開いたときのリストを高くする
 root.option_add("*TCombobox*Listbox.font", ("", 16))
 # Buttonを高くする
-style.configure("TButton", font=("", 12), padding=(3, 5))
+style.configure("TButton", font=("", 12), padding=(3, 8))
 
 style.configure("TLabelframe.Label", font=("", 12))
 style.configure("Treeview.Heading", font=("", 12))
@@ -817,13 +817,13 @@ txt_id = ttk.Label(
 )
 txt_id.place(x=80, y=10)
 # 品番:Labelx2
-tk.Label(frame1, text="品番：", font=("", 12)).place(x=180, y=10)
+tk.Label(frame1, text="品番：", font=("", 12)).place(x=190, y=10)
 lbl_product = ttk.Label(
-    frame1, text="", font=("", 12), relief="solid", width=20, anchor=tk.CENTER
+    frame1, text="", font=("", 12), relief="solid", width=16, anchor=tk.CENTER
 )
-lbl_product.place(x=230, y=10)
+lbl_product.place(x=240, y=10)
 # 加工機番:Label&Combobox
-tk.Label(frame1, text="加工機番：", font=("", 12)).place(x=410, y=10)
+tk.Label(frame1, text="加工機番：", font=("", 12)).place(x=400, y=10)
 var_mcno = tk.StringVar()
 cmb_mcno = ttk.Combobox(
     frame1,
@@ -833,15 +833,15 @@ cmb_mcno = ttk.Combobox(
     textvariable=var_mcno,
     values=[],
 )
-cmb_mcno.place(x=490, y=10)
+cmb_mcno.place(x=480, y=10)
 # 加工期間:Label&Entry x2
-tk.Label(frame1, text="加工期間：", font=("", 12)).place(x=595, y=10)
+tk.Label(frame1, text="加工期間：", font=("", 12)).place(x=585, y=10)
 txt_from = ttk.Entry(frame1, width=12, font=("", 12), justify=tk.CENTER)
-txt_from.place(x=680, y=10)
+txt_from.place(x=670, y=10)
 txt_from.bind("<FocusIn>", set_txtpos1)
 tk.Label(frame1, text="-", font=("", 12)).place(x=795, y=10)
 txt_to = ttk.Entry(frame1, width=12, font=("", 12), justify=tk.CENTER)
-txt_to.place(x=820, y=10)
+txt_to.place(x=810, y=10)
 txt_to.bind("<FocusIn>", set_txtpos2)
 # 検査日:Label&Entry
 tk.Label(frame1, text="  検査日：", font=("", 12)).place(x=930, y=10)
